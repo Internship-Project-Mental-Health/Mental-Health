@@ -1,12 +1,13 @@
 import React from 'react'
 import "./ProductCard.css"
-function ProductCard({PIC},{DESCRIPTION}) {
+
+function ProductCard({ name, productImg, DESCRIPTION }) {
     return (
         <div className="product_card">
             <div className="container">
-                <img src={PIC} alt height="55%" width="100%" />
+                <img src={productImg} alt height="55%" width="100%" />
                 <div className="product_name">
-                    Doodle Book
+                    {name}
                 </div>
                 <div className="desc">
                     {DESCRIPTION}

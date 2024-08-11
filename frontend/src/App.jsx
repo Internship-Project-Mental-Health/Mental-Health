@@ -1,37 +1,26 @@
 import React, { useEffect } from 'react'
-import axios from 'axios';
 import "./App.css"
-import HeaD from './Components/ProductPage/Head/Head'
-import Mid1 from './Components/ProductPage/Mid1/Mid1'
-import Mid2 from './Components/ProductPage/Mid2/Mid2'
-import Mid3 from './Components/ProductPage/Mid3/Mid3'
-import Mid4 from './Components/ProductPage/Mid4/Mid4'
 import Header from './Components/Common/Header/Header'
-import Our_Partners from './Components/ProductPage/Our_Partners/Our_Partners'
-// const fetchProduct = async() =>{
-//   const data =await axios.use('http://localhost:8000/Products')
+import Section1 from './Components/HomePage/Section1/Section1'
+import Section0 from './Components/HomePage/Section0/Section0'
+import Section0_1 from './Components/HomePage/Section0_1/Section0_1';
 
-// }
-// useEffect(()=>{
-//   fetchProduct();
-// },[])
 
 const App = () => {
+ 
   return (
     <>
-      <Header/>
-      <div>Home</div>
-      {/* <HeaD />
-      <Mid1 />
-      <Mid2 />
-      <Mid3 />
-      <Mid4 />
-      <Our_Partners /> */}
+      <Header />
+      {/* <div>Home</div> */}
 
+      <h1>Home</h1>
+      <Section0/>
+      <Section0_1/>
+      <Section1/>
+      
     </>
 
   )
 }
 
 export default App
-

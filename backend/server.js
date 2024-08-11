@@ -9,9 +9,11 @@ const connectDB = require("./config/db");
 const PORT = process.env.PORT || 6000 || 8000
 const app = express();
 connectDB()
-
+app.use(express.json());
 app.use("/", rootroutes);
 app.use("/Products", productroute);
+app.use("/api/Products", productroute);
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`.bgBlue.black)

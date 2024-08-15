@@ -12,7 +12,7 @@ function Section0_1() {
                     <img src={img1} alt />
                     <div className="content">
                         <strong>The mind is powerful.</strong>
-                        <h5 className="desc">Humans have up to 6200 thoughts a day. Sometimes, those thoughts and feelings get the
+                        <h5 className="desc_sec">Humans have up to 6200 thoughts a day. Sometimes, those thoughts and feelings get the
                             better of us and
                             impact our
                             ability to lead a healthy, fulfilling life.</h5>
@@ -21,7 +21,7 @@ function Section0_1() {
                 <div className="sec">
                     <div className="content">
                         <strong>Don’t do it alone.</strong>
-                        <h5 className="desc">Sitting with those feelings and emotions by yourself can lead to overwhelmed responses
+                        <h5 className="desc_sec">Sitting with those feelings and emotions by yourself can lead to overwhelmed responses
                             and stress. But
                             you don’t have to
                             do it alone.</h5>
@@ -32,7 +32,7 @@ function Section0_1() {
                     <img src={img3} alt />
                     <div className="content">
                         <strong>Better, together.</strong>
-                        <h5 className="desc">Better, together.
+                        <h5 className="desc_sec">Better, together.
                             Working with professionals who offer the best online counselling in India will give you the support,
                             structure and tools
                             you need to overcome your struggles and live your best life.</h5>

@@ -12,7 +12,7 @@ function Section0() {
                         overcome addiction and stress with the
                         best online counselling in India.</h5>
                 </div>
-                <div className="image">
+                <div >
                     <img src="https://ananda.ai/wp-content/uploads/elementor/thumbs/img-heart-qrvocl01zswwwgdq4j3g702udnob1uzgxmmnvbtzta.png" alt />
                 </div>
                 <div className="sec1">

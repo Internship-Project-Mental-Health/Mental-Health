@@ -10,12 +10,15 @@ import Mid4 from '../Components/ProductPage/Mid4/Mid4'
 import Header from '../Components/Common/Header/Header'
 import Our_Partners from '../Components/ProductPage/Our_Partners/Our_Partners'
 import ProductCard from '../Components/ProductPage/ProductCard/ProductCard';
+import FooterNew from '../Components/Common/Footer/FooterNew'
+
 function HealthproductPage() {
 
   const [products, setProducts] = useState([])
   useEffect(() => {
     axios.get('/api/Products')
       .then((response) => {
+        console.log(response.data);
         setProducts(response.data);
       })
       .catch((error) => {
@@ -23,26 +26,27 @@ function HealthproductPage() {
       });
   }, [])
   return (
-      <>
-          <Header />
+    <>
+      <Header />
       <h1>Products</h1>
-          <HeaD />
+      <HeaD />
       {
         products.map((product) => (
           <ProductCard
             key={product.id}
+            id={product.product_id}
             name={product.name}
             productImg={product.productImg}
           />
         ))
       }
-          <Mid1 />
-          <Mid2 />
-          <Mid3 />
-          <Mid4 />
-          <Our_Partners />
-
-      </>
+      <Mid1 />
+      <Mid2 />
+      <Mid3 />
+      <Mid4 />
+      <Our_Partners />
+      <FooterNew />
+    </>
   )
 }
 

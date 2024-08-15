@@ -20,13 +20,13 @@ function Header() {
                                     <Link to="/">Home</Link>
                                 </div>
                                 <div className="links">
-                                    <a href>Services</a>
+                                    <Link to="/Services">Services</Link>
                                 </div>
                                 <div className="links">
                                     <Link to="/Products">Products</Link>
                                 </div>
                                 <div className="links">
-                                    <a href>About US</a>
+                                    <Link to="/OurTeam">Our Team</Link>
                                 </div>
                                 <div className="links">
                                     <a href>Review</a>

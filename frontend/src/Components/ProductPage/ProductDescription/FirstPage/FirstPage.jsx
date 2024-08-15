@@ -6,7 +6,7 @@ import DesHeading from './DescHeading/DesHeading';
 import Desc from './Description/Desc';
 import Bottom from './Bottom/Bottom';
 import Product from './Product/Product';
-function FirstPage() {
+function FirstPage({ id, name, productImg, DESCRIPTION }) {
   return (
     <div>
       <div className="Desc_container">
@@ -26,7 +26,7 @@ function FirstPage() {
           </div>
           <div className="Desc_left2">
             <div className="Desc_image">
-              <img src="https://heartitout.in/links/wp-content/uploads/2022/04/8-1.png" alt height="100%" width="100%" />
+              <img src={productImg} alt height="100%" width="100%" />
             </div>
           </div>
         </div>
